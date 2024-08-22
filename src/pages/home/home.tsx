@@ -36,7 +36,7 @@ function Home() {
   return (
     <main className="items-center w-full justify-center flex flex-col mb-20 gap-24">
       <div id='start' className='max-w-7xl w-11/12 lg:px-0 px-5 flex flex-col lg:flex-row min-h-screen'>
-        <div className="flex flex-col gap-6 justify-center h-screen ">
+        <div className="flex flex-col gap-6 justify-center h-screen w-full">
           <h2 className="bg-gradient-to-r from-fuchsia-500 to-cyan-500 text-transparent bg-clip-text  lg:max-w-lg font-sans text-5xl font-bold  sm:text-5xl ">
             Glafyros
           </h2>
