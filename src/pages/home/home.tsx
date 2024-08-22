@@ -40,7 +40,7 @@ function Home() {
           <h2 className="bg-gradient-to-r from-fuchsia-500 to-cyan-500 text-transparent bg-clip-text  lg:max-w-lg font-sans text-5xl font-bold  sm:text-5xl ">
             Glafyros
           </h2>
-          <p className="lg:max-w-xl text-base font-semibold text-zinc-200 text-bold md:text-2xl w-full">
+          <p className="lg:max-w-xl text-base font-semibold text-zinc-200 text-bold md:text-2xl lg:w-1/2 w-full">
             Otimize seu tempo e os processos da sua empresa
             <br/>
             Ganhe mais dinheiro com Glafyros
