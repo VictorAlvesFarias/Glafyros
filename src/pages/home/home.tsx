@@ -40,9 +40,20 @@ function Home() {
           <h2 className="bg-gradient-to-r from-fuchsia-500 to-cyan-500 text-transparent bg-clip-text  lg:max-w-lg font-sans text-5xl font-bold  sm:text-5xl ">
             Glafyros
           </h2>
-          <p className="lg:max-w-xl text-base font-semibold text-zinc-200 text-bold md:text-2xl">
-            Otimize seu tempo, os processos da sua empresa, e ganhe mais dinheiro, com Glafyros
-          </p>
+          <div className="flex flex-col gap-1">
+            <p className="lg:max-w-xl text-base font-semibold text-zinc-200 text-bold md:text-2xl">
+              Otimize seu tempo
+            </p>
+            <p className="lg:max-w-xl text-base font-semibold text-zinc-200 text-bold md:text-2xl">
+              Os processos da sua empresa
+            </p>
+            <p className="lg:max-w-xl text-base font-semibold text-zinc-200 text-bold md:text-2xl">
+              Ganhe mais dinheiro
+            </p>
+            <p className="lg:max-w-xl text-base font-semibold text-zinc-200 text-bold md:text-2xl">
+              Com Glafyros
+            </p>          
+          </div>
           <div className='flex gap-3 font-semibold text-white '>
             <Link className='text-sm bg-gradient-to-r from-violet-600 to-fuchsia-500 transition-all hover:from-violet-500 hover:to-fuchsia-400 p-1  px-6 w-fit rounded' to={''}>Ver mais</Link>
             <Link className='text-sm border rounded p-1 px-6 bg-zinc-800 hover:bg-zinc-700 transition-all' to={''}>Contato</Link>
