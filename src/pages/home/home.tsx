@@ -36,11 +36,11 @@ function Home() {
   return (
     <main className="items-center w-full justify-center flex flex-col mb-20 gap-24">
       <div id='start' className='max-w-7xl w-11/12 lg:px-0 px-5 flex flex-col lg:flex-row min-h-screen'>
-        <div className="flex flex-col gap-6 justify-center h-screen w-full">
+        <div className="flex flex-col gap-6 justify-center h-screen lg:w-1/2 w-full">
           <h2 className="bg-gradient-to-r from-fuchsia-500 to-cyan-500 text-transparent bg-clip-text  lg:max-w-lg font-sans text-5xl font-bold  sm:text-5xl ">
             Glafyros
           </h2>
-          <p className="lg:max-w-xl text-base font-semibold text-zinc-200 text-bold md:text-2xl lg:w-1/2 w-full">
+          <p className="lg:max-w-xl text-base font-semibold text-zinc-200 text-bold md:text-2xl w-full">
             Otimize seu tempo e os processos da sua empresa
             <br/>
             Ganhe mais dinheiro com Glafyros
