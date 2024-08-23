@@ -40,10 +40,10 @@ function Home() {
           <h2 className="bg-gradient-to-r from-fuchsia-500 to-cyan-500 text-transparent bg-clip-text  lg:max-w-lg font-sans text-5xl font-bold  sm:text-5xl ">
             Glafyros
           </h2>
-          <p className="lg:max-w-xl text-base font-semibold text-zinc-200 text-bold md:text-2xl w-full">
-            Otimize seu tempo e os processos da sua empresa
-            <br/>
-            Ganhe mais dinheiro com Glafyros
+          <p className="lg:max-w-xl text-base font-semibold text-zinc-200 text-bold md:text-xl w-full">
+            Otimize seu tempo e simplifique os processos da sua empresa
+            <br />
+            Maximize seus resultados com a Glafyros
           </p>
           <div className='flex gap-3 font-semibold text-white '>
             <Link className='text-sm bg-gradient-to-r from-violet-600 to-fuchsia-500 transition-all hover:from-violet-500 hover:to-fuchsia-400 p-1  px-6 w-fit rounded' to={''}>Ver mais</Link>
@@ -56,18 +56,30 @@ function Home() {
       </div>
       <div id="we" className='max-w-7xl w-11/12 flex gap-6'>
         <div className='bg-white bg-opacity-10  w-full flex rounded flex-col gap-6 relative'>
-          <div className='bg-zinc-700 p-12 rounded'>
+          <div className='bg-zinc-700 p-12 rounded flex flex-col gap-3'>
             <h2 className=" lg:max-w-lg font-sans text-3xl font-bold bg-gradient-to-r from-fuchsia-500 to-cyan-500 text-transparent bg-clip-text ">
               Sobre nós
             </h2>
             <p>
-              Na Glafyros, somos movidos pela paixão por transformar negócios e otimizar processos. Nossa missão é proporcionar às empresas soluções tecnológicas inovadoras que aumentem sua eficiência e lucratividade. Com uma equipe formada por especialistas com vasta experiência em grandes corporações, entendemos as necessidades e desafios das empresas modernas.
+              Na Glafyros, nossa paixão é transformar negócios e otimizar processos através da
+              tecnologia. Estamos dedicados a oferecer soluções inovadoras que não apenas
+              aumentam a eficiência, mas também elevam a lucratividade da sua empresa.
             </p >
             <p>
-              Trabalhamos com o desenvolvimento de sites e aplicativos móveis, consultoria em TI, suporte técnico e marketing digital. Nosso compromisso é ajudar nossos clientes a alcançar novos patamares de sucesso por meio de tecnologia de ponta e estratégias personalizadas.
+              Nossa equipe é composta por especialistas com vasta experiência em grandes
+              corporações, o que nos permite entender profundamente os desafios das empresas
+              modernas. Atuamos em diversas frentes, incluindo o desenvolvimento de sites e
+              aplicativos móveis, consultoria em TI, suporte técnico e marketing digital. Nosso
+              objetivo é impulsionar seus negócios para novos patamares de sucesso, utilizando
+              tecnologia de ponta e estratégias personalizadas para atender às suas necessidades
+              específicas.
             </p>
             <p>
-              Nós acreditamos que o sucesso dos nossos clientes é o nosso sucesso. Por isso, colocamos todo o nosso conhecimento e experiência a serviço de empresas que buscam crescer e inovar no mercado.
+              Acreditamos firmemente que o sucesso dos nossos clientes é o nosso próprio
+              sucesso. Por isso, estamos comprometidos em colocar todo o nosso conhecimento e
+              experiência a serviço das empresas que buscam crescimento e inovação no mercado.
+              Junte-se a nós e descubra como podemos ajudar a transformar seus desafios em
+              oportunidades.
             </p>
           </div>
         </div>
@@ -78,7 +90,7 @@ function Home() {
             Uma equipe forte
           </h2>
           <p>
-            Temos pessoas que ja tiveram experiencias em grandes empresas
+            Contamos com profissionais com experiência em grandes empresas
           </p>
         </div>
         <div className='flex gap-24 flex-wrap items-center justify-center'>
@@ -96,13 +108,13 @@ function Home() {
           <h3 className=" text-xl font-semibold sm:text-center sm:text-2xl">
             Consultoria gratuita
           </h3>
-          <p className="text-center">Nos envie um e-mail com seu problema, ou necessidade</p>
+          <p className="text-center">Envie-nos um e-mail com sua necessidade e nós responderemos o quanto antes</p>
           <form className=' p-12 rounded' onSubmit={handleSubmit(handleOnSubmit)}>
             <Input error={errors.nome?.message} name={"nome"} label={"Nome"} register={register} />
             <Input error={errors.email?.message} name={"email"} label={"E-mail"} register={register} />
             <Input error={errors.telefone?.message} name={"telefone"} label={"Telefone"} register={register} />
             <Input error={errors.assunto?.message} name={"assunto"} label={"Assunto"} register={register} />
-            <Input error={errors.problema?.message} name={"problema"} label={"Problema"} register={register} />
+            <Input error={errors.problema?.message} name={"problema"} label={"O que você precisa"} register={register} />
             <div className="mt-4 mb-2 sm:mb-4">
               <Button>Avançar</Button>
             </div>
