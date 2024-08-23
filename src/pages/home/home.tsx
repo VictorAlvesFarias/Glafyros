@@ -106,7 +106,7 @@ function Home() {
       <div className='max-w-7xl w-11/12 flex gap-6 flex-col-reverse lg:flex-row '>
         <div className="text-black flex flex-col rounded p-12 w-full bg-white">
           <h3 className=" text-xl font-semibold sm:text-center sm:text-2xl">
-            Consultoria gratuita
+            Avaliação gratuita
           </h3>
           <p className="text-center">Envie-nos um e-mail com sua necessidade e nós responderemos o quanto antes</p>
           <form className=' p-12 rounded' onSubmit={handleSubmit(handleOnSubmit)}>
