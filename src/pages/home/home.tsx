@@ -109,7 +109,7 @@ function Home() {
             Avaliação gratuita
           </h3>
           <p className="text-center">Envie-nos um e-mail com sua necessidade e nós responderemos o quanto antes</p>
-          <form className=' p-12 rounded' onSubmit={handleSubmit(handleOnSubmit)}>
+          <form className='rounded' onSubmit={handleSubmit(handleOnSubmit)}>
             <Input error={errors.nome?.message} name={"nome"} label={"Nome"} register={register} />
             <Input error={errors.email?.message} name={"email"} label={"E-mail"} register={register} />
             <Input error={errors.telefone?.message} name={"telefone"} label={"Telefone"} register={register} />
