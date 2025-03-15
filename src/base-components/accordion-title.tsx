@@ -27,6 +27,8 @@ const AccordionTitleContainer = forwardRef<LegacyRef<HTMLDivElement> | any, IAcc
     );
 })
 
+AccordionTitleContainer.displayName = "AccordionTitleContainer"
+
 export default AccordionTitleContainer
 
 export type {

@@ -14,13 +14,15 @@ const AccordionContainer = forwardRef<LegacyRef<HTMLDivElement> | undefined | an
     return (
         <div
             ref={ref}
-            className={_.className+' aria-hidden:max-h-96 gap-3 aria-hidden:py-3 flex max-h-0 overflow-hidden flex-col transition-all duration-300'}
+            className={_.className + ' aria-hidden:max-h-96 gap-3 aria-hidden:py-3 flex max-h-0 overflow-hidden flex-col transition-all duration-300'}
             aria-hidden={open}
         >
-            { _.children}
+            {_.children}
         </div>
     );
 })
+
+AccordionContainer.displayName = "AccordionContainer"
 
 export default AccordionContainer
 

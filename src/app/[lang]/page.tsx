@@ -41,8 +41,8 @@ export default async function Home() {
         </h1>
         <div className='flex flex-col p-6 items-center justify-center gap-6 bg-zinc-800 shadow-sm rounded-md'>
           {
-            texts.aboutMe.paragraph.map((e: any) =>
-              <p>{e}</p>
+            texts.aboutMe.paragraph.map((e: any, i: any) =>
+              <p key={i}>{e}</p>
             )
           }
         </div>
@@ -78,8 +78,8 @@ export default async function Home() {
           <div className="flex flex-col bg-white bg-opacity-10 rounded p-12 w-full">
             <h2 className="mb-6 pb-2 text-4xl font-bold">{texts.services.title}</h2>
             <div className="mb-6 flex flex-wrap flex-col">
-              {texts.services.items.map((e: any) =>
-                <div className="mb-6 flex gap-3">
+              {texts.services.items.map((e: any, i: any) =>
+                <div key={i} className="mb-6 flex gap-3">
                   <p className="flex">
                     <svg
                       className="h-5 w-5 text-green-400"

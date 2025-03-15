@@ -6,7 +6,7 @@ interface IAccordionDesactivateIconProps {
 }
 
 function AccordionDesactivateIcon(props: IAccordionDesactivateIconProps) {
-    const { open } = useContext(AccordionContextObject)
+    const {open} = useContext(AccordionContextObject)
 
     return (
         !open &&

@@ -6,7 +6,7 @@ interface IAccordionActivateIconProps {
 }
 
 function AccordionActivateIcon(props: IAccordionActivateIconProps) {
-    const { open } = useContext(AccordionContextObject)
+    const {open} = useContext(AccordionContextObject)
 
     return (
         open &&
