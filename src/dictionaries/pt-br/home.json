@@ -1,0 +1,49 @@
+{
+    "header": {
+      "title": ["Glafyros"],
+      "paragraph": ["Otimize seu tempo e simplifique os processos da sua empresa para maximizar seus resultados com a Glafyros."],
+      "seeMore": "Veja mais",
+      "contact": "Contato"
+    },
+    "aboutMe": {
+      "title": "Sobre nós",
+      "paragraph": [
+        "Na Glafyros, nossa paixão é transformar negócios e otimizar processos através da tecnologia. Estamos dedicados a oferecer soluções inovadoras que não apenas aumentam a eficiência, mas também elevam a lucratividade da sua empresa.",
+        "Nossa equipe é composta por especialistas com vasta experiência em grandes corporações, o que nos permite entender profundamente os desafios das empresas modernas. Atuamos em diversas frentes, incluindo o desenvolvimento de sites e aplicativos móveis, consultoria em TI, suporte técnico e marketing digital. Nosso objetivo é impulsionar seus negócios para novos patamares de sucesso, utilizando tecnologia de ponta e estratégias personalizadas para atender às suas necessidades específicas.",
+        "Acreditamos firmemente que o sucesso dos nossos clientes é o nosso próprio sucesso. Por isso, estamos comprometidos em colocar todo o nosso conhecimento e experiência a serviço das empresas que buscam crescimento e inovação no mercado. Junte-se a nós e descubra como podemos ajudar a transformar seus desafios em oportunidades."
+      ]
+    },
+    "team": {
+      "title": "Uma equipe forte",
+      "description": "Contamos com profissionais com experiência em grandes empresas"
+    },
+    "contactForm": {
+      "title": "Avaliação gratuita",
+      "description": "Envie-nos um e-mail com sua necessidade e nós responderemos o quanto antes",
+      "fields": {
+        "name": "Nome",
+        "email": "E-mail",
+        "phone": "Telefone",
+        "subject": "Assunto",
+        "message": "O que você precisa",
+        "next": "Avançar",
+        "privacy": "Nós respeitamos sua privacidade.",
+        "unsubscribe": "Cancelamento da inscrição a qualquer momento."
+      }
+    },
+    "services": {
+      "title": "Nossos serviços",
+      "items": [
+        "Desenvolvimento Web",
+        "Consultoria em TI",
+        "Desenvolvimento de Aplicativos Móveis",
+        "Suporte Técnico",
+        "Marketing Digital",
+        "Design Gráfico"
+      ]
+    },
+    "footer": {
+      "email": "victoralves.contact@glafyros.com",
+      "copyright": "© 2024. Todos os direitos reservados."
+    }
+  }

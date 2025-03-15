@@ -1,0 +1,49 @@
+{
+    "header": {
+      "title": ["Glafyros"],
+      "paragraph": ["Optimize your time and simplify your company's processes to maximize your results with Glafyros."],
+      "seeMore": "See more",
+      "contact": "Contact"
+    },
+    "aboutMe": {
+      "title": "About us",
+      "paragraph": [
+        "At Glafyros, our passion is transforming businesses and optimizing processes through technology. We are dedicated to offering innovative solutions that not only increase efficiency but also boost your company's profitability.",
+        "Our team is composed of experts with extensive experience in large corporations, which allows us to deeply understand the challenges of modern businesses. We work in various areas, including website and mobile app development, IT consulting, technical support, and digital marketing. Our goal is to drive your business to new levels of success, using cutting-edge technology and personalized strategies to meet your specific needs.",
+        "We firmly believe that our clients' success is our own success. That's why we are committed to putting all our knowledge and experience at the service of companies seeking growth and innovation in the market. Join us and discover how we can help turn your challenges into opportunities."
+      ]
+    },
+    "team": {
+      "title": "A strong team",
+      "description": "We have professionals with experience in large companies"
+    },
+    "contactForm": {
+      "title": "Free evaluation",
+      "description": "Send us an email with your needs, and we will respond as soon as possible",
+      "fields": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "subject": "Subject",
+        "message": "What you need",
+        "next": "Next",
+        "privacy": "We respect your privacy.",
+        "unsubscribe": "Unsubscribe at any time."
+      }
+    },
+    "services": {
+      "title": "Our services",
+      "items": [
+        "Web Development",
+        "IT Consulting",
+        "Mobile App Development",
+        "Technical Support",
+        "Digital Marketing",
+        "Graphic Design"
+      ]
+    },
+    "footer": {
+      "email": "victoralves.contact@glafyros.com",
+      "copyright": "© 2024. All Rights Reserved."
+    }
+  }
