@@ -17,7 +17,11 @@ function AccordionContext(props: IAccordionContextComponent) {
         open: open
     }
 
-    return <AccordionContextObject.Provider value={context} children={props.children} />
+    return (
+        <AccordionContextObject.Provider value={context} >
+            {props.children}
+        </AccordionContextObject.Provider>
+    )
 }
 
 const AccordionContextObject = createContext<IAccordionContext>({
