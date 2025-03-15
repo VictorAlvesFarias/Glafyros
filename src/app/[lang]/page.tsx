@@ -20,11 +20,10 @@ export default async function Home() {
 
   return (
     <div className="c-900 flex flex-col items-center justify-center w-full text-white">
-      <header className="lg:px-0 px-5 flex justify-center items-center w-full min-h-screen bg-gradient-to-t from-transparent to-black via-zinc-800">
-        <div className="md:grid md:pt-0 pt-28 xs:grid-cols-2 flex flex-col items-center w-11/12 gap-9 flex-wrap ">
-          <Image src={logoIcon} alt={''} className='w-full rounded-xl object-cover md:'></Image>
-          <div className='flex flex-col flex-1 gap-6  '>
-            <h1 className="text-4xl lg:text-7xl flex justify-start text-transparent w-full bg-clip-text bg-gradient-to-r from-violet-600 to-fuchsia-500 transition-all">
+      <header className="lg:px-0 px-5 flex justify-center items-center w-full min-h-screen bg-gradient-to-t to-zinc-400 to-100% via-zinc-200 via-40% from-transparent dark:to-black dark:via-zinc-800">
+        <div className="md:grid py-28 xs:grid-cols-5 flex flex-col items-center max-w-128  gap-9 flex-wrap w-11/12 ">
+          <div className='flex flex-col flex-1 gap-6 md:col-span-3 col-span-1 '>
+            <h1 className="text-4xl lg:text-7xl flex justify-start text-transparent  w-full bg-clip-text bg-gradient-to-r from-violet-600 to-fuchsia-500">
               {texts.header.title[0]}
             </h1>
             <h2>{texts.header.paragraph[0]}</h2>
@@ -33,6 +32,7 @@ export default async function Home() {
               <Anch className='text-sm border rounded p-1 px-6 bg-zinc-800 hover:bg-zinc-700 transition-all' href={''}>{texts.header.contact}</Anch>
             </div>
           </div>
+          <Image src={logoIcon} alt={''} className='w-full md:col-span-2 rounded-xl object-cover md:block hidden'></Image>
         </div>
       </header>
       <Content id='about-us'>

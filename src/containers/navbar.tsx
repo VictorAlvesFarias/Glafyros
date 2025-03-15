@@ -6,6 +6,8 @@ import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 import Anch from '../base-components/anch';
 import useClientInter from '@/utils/hooks/use-client-inter';
 import Locale from '../base-components/locale';
+import Image from 'next/image';
+import { logoNoGlowIcon } from '../../public/public-modules';
 
 function Navbar() {
   const [navStyle, setNavStyle] = useState(window.scrollY >= 50);
@@ -36,8 +38,12 @@ function Navbar() {
   return (
     <nav className={"fixed w-screen transition flex justify-center items-center border-b z-10 border-b-white " + (navStyle ? ' bg-zinc-50 shadow-lg  text-black' : 'text-white')}>
       <div className="items-center w-full justify-center flex flex-col">
-        <div className="max-w-128 w-11/12 lg:px-0 px-5 ">
-          <div className="flex items-center justify-between lg:justify-center h-20 gap-x-12 ">
+        <div className="max-w-128 w-11/12 lg:px-0 px-5 flex justify-between">
+          <div className='flex items-center gap-6 flex-1'>
+            <Image src={logoNoGlowIcon} className={`w-6 h-6 transition-all ${navStyle ? 'invert' : ''}`} alt={''}></Image>
+            <h1 className={`text-md `}> Glafyros</h1>
+          </div>
+          <div className="flex items-center w-fit justify-between lg:justify-end h-20 gap-x-12 ">
             <Anch href="/#about-us" className="hidden lg:flex h-10  flex-col justify-center">
               <span className={`text-md`}>{texts?.aboutMe}</span>
             </Anch>
@@ -72,17 +78,20 @@ function Navbar() {
             </DropdownMenu.Root>
             <button type="button" onClick={() => setMobileMenuOpen(true)} className={`lg:hidden -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 transition-all text-gray-700 `}>
               <span className="sr-only">Open main menu</span>
-              <svg className={"h-7 w-9 text-yellow-50 stroke-black"} fill="none" viewBox="0 0 24 24" strokeWidth="1.5" aria-hidden="true">
+              <svg className={`h-7 w-9 text-yellow-50 ${navStyle ? 'stroke-black' : 'stroke-white'} `} fill="none" viewBox="0 0 24 24" strokeWidth="1.5" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
             </button>
+          </div>
+          <div className='flex-1 hidden md:flex'>
+
           </div>
         </div>
       </div>
       <div className={`fixed justify-end w-full flex top-0 h-screen transition-all ${mobileMenuOpen ? "left-0" : "left-full"}`}>
         <div className="lg:hidden w-full h-full flex" role="dialog" aria-modal="true">
           <div onClick={() => setMobileMenuOpen(false)} className='flex-1'></div>
-          <div className=" inset-y-0 right-0 h-full w-full overflow-y-auto bg-white  px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div className="inset-y-0 right-0 h-full w-full overflow-y-auto bg-white text-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between ">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
@@ -97,14 +106,14 @@ function Navbar() {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="flex flex-col gap-6">
-                  <Anch href="/#about-me" onClick={() => setMobileMenuOpen(false)} className="block">
+                  <Anch onClick={() => setMobileMenuOpen(false)} href="/#about-us" className="lg:flex h-10  flex-col justify-center">
                     <span className={`text-md`}>{texts?.aboutMe}</span>
                   </Anch>
-                  <Anch href="/#technologies" onClick={() => setMobileMenuOpen(false)} className="block">
-                    <span className={`text-md`}>{texts?.technologies}</span>
+                  <Anch onClick={() => setMobileMenuOpen(false)} href="/#team" className="lg:flex h-10  flex-col justify-center">
+                    <span className={`text-md`}>{texts?.team}</span>
                   </Anch>
-                  <Anch href="/#links" onClick={() => setMobileMenuOpen(false)} className="block">
-                    <span className={`text-md`}>{texts?.links}</span>
+                  <Anch onClick={() => setMobileMenuOpen(false)} href="/#contact" className="lg:flex h-10  flex-col justify-center">
+                    <span className={`text-md`}>{texts?.Contact}</span>
                   </Anch>
                   <div onClick={() => setMobileMenuLanguage(!mobileMenuLanguage)}>
                     <span className={`text-md cursor-pointer`}>{texts?.language} </span>
