@@ -80,7 +80,7 @@ function Navbar() {
               </svg>
             </button>
           </div>
-          <div className='flex-1 hidden md:flex'>
+          <div className='flex-1 hidden lg:flex'>
 
           </div>
         </div>
