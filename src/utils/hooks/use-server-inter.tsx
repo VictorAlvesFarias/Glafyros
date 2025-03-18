@@ -1,9 +1,8 @@
-import { headers } from "next/dist/client/components/headers";
-import { languageFactory } from '../../../i18n.config'
+import { languageFactory } from '../../i18n/i18n.config'
+import { getPathServerSide } from '@/i18n/i18n.server';
 
 function useServerInter<T>(dictionaryFile: string) {
-    const headersList = headers();
-    const internationalizationPath: any = headersList.get('x-url');
+    const internationalizationPath = getPathServerSide();
     const language = languageFactory(internationalizationPath)
 
     return language(dictionaryFile).then((modulo: T | null) => {

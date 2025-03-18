@@ -1,12 +1,11 @@
-import { usePathname } from "next/navigation";
-import { languageFactory } from "../../../i18n.config";
+import { getPathClientSide } from "@/i18n/i18n.client";
+import { languageFactory } from "../../i18n/i18n.config";
 import { useEffect, useState } from "react";
 
 function useClientInter<T>(dictionaryFile: string, callback?: (e: any) => any) {
-    const pathname = usePathname();
-    const internationalizationPath = pathname.split("/")[1];
+    const internationalizationPath = getPathClientSide();
     const language = languageFactory(internationalizationPath);
-    const [texts, setTexts] = useState<T | null>(null); // Inicializado corretamente
+    const [texts, setTexts] = useState<T | null>(null);
 
     useEffect(() => {
         let isMounted = true; 

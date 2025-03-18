@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { languagesArray, defaultLocale } from '../i18n.config'
+import { languagesArray, defaultLocale } from './i18n/i18n.config'
 
 export function middleware(request: any) {
 
