@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation"
 
-export function getPathClientSide() {
+export function usePathClientSide() {
     const internationalizationPath =  usePathname()
 
     return internationalizationPath
