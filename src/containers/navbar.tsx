@@ -13,7 +13,7 @@ function Navbar() {
   const [navStyle, setNavStyle] = useState(window.scrollY >= 50);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [mobileMenuLanguage, setMobileMenuLanguage] = useState(false)
-  const [texts, setTexts] = useState<any>({})
+  const texts = useClientInter<any>("navbar")
 
   useEffect(() => {
     const handleScroll: any = () => {
@@ -31,9 +31,6 @@ function Navbar() {
     };
   }, [navStyle]);
 
-  useClientInter("navbar", (e) => {
-    setTexts(e)
-  })
 
   return (
     <nav className={"fixed w-screen transition flex justify-center items-center border-b z-10 border-b-white " + (navStyle ? ' bg-zinc-50 shadow-lg  text-black' : 'text-white')}>

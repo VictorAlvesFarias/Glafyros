@@ -9,7 +9,7 @@ import useClientInter from '@/utils/hooks/use-client-inter';
 
 function ContactForm() {
     const [send, setSend] = useState(false)
-    const [texts, setTexts] = useState<any | null>()
+    const texts = useClientInter<any>("home")
 
     function handleOnSubmit(data?: any) {
         setSend(true)
@@ -24,10 +24,6 @@ function ContactForm() {
     })
     const { handleSubmit, formState: { errors }, register } = useForm<z.infer<typeof schema>>({
         resolver: zodResolver(schema)
-    })
-
-    useClientInter("home", (e) => {
-        setTexts(e)
     })
 
     return (
